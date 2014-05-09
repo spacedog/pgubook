@@ -25,7 +25,7 @@
 .type read_record, @function
 
 read_record:
-  pushq %rbp,
+  pushq %rbp
   movq %rsp, %rbp
 
   movq ST_FD_IN(%rbp) , %rdi
