@@ -30,6 +30,11 @@ record1:
   .byte 0
   .endr
 
+  .ascii "rb@gmail.com\0"
+  .rept 29
+  .byte 0
+  .endr
+
   .quad 45
 
 record2:
@@ -45,6 +50,11 @@ record2:
 
   .ascii "2224 S Johannan St\nChicago, IL 12345\0"
   .rept 203 #padding to 240 bytes
+  .byte 0
+  .endr
+
+  .ascii "mt@gmail.com\0"
+  .rept 29
   .byte 0
   .endr
 
@@ -65,6 +75,12 @@ record3:
   .rept 206 #padding to 240 bytes
   .byte 0
   .endr
+
+  .ascii "mt@gmail.com\0"
+  .rept 29
+  .byte 0
+  .endr
+
 
   .quad 36
 file_name:
