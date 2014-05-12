@@ -15,74 +15,74 @@
 # characters at the end of each field to fill it up
 
 record1:
-  .ascii "Frederick\0"
-  .rept 31 #padding to 40 bytes
-  .byte 0
-  .endr
+.ascii "Fredrick\0"
+.rept 31 # Padding to 40 bytes
+.byte 0
+.endr
 
-  .ascii "Bartlett\0"
-  .rept 31 #padding to 40 bytes
-  .byte 0
-  .endr
+.ascii "Bartlett\0"
+.rept 31 # Padding to 40 bytes
+.byte 0
+.endr
 
-  .ascii "4242 S Prairie\nTulsa, OK 55555\0"
-  .rept 209 #padding to 240 bytes
-  .byte 0
-  .endr
+.ascii "4242 S Prairie\nTulsa, OK 55555\0"
+.rept 209 # Padding to 240 bytes
+.byte 0
+.endr
 
-  .ascii "rb@gmail.com\0"
-  .rept 29
-  .byte 0
-  .endr
+.long 45
 
-  .quad 45
+.ascii "fd@gmail.com\0"
+.rept 28 # Padding to 40 bytes
+.byte 0
+.endr
 
 record2:
-  .ascii "Marilyn\0"
-  .rept 32 #padding to 40 bytes
-  .byte 0
-  .endr
+.ascii "Marilyn\0"
+.rept 32 # Padding to 40 bytes
+.byte 0
+.endr
 
-  .ascii "Taylor\0"
-  .rept 33 #padding to 40 bytes
-  .byte 0
-  .endr
+.ascii "Taylor\0"
+.rept 33 # Padding to 40 bytes
+.byte 0
+.endr
 
-  .ascii "2224 S Johannan St\nChicago, IL 12345\0"
-  .rept 203 #padding to 240 bytes
-  .byte 0
-  .endr
+.ascii "2224 S Johannan St\nChicago, IL 12345\0"
+.rept 203 # Padding to 240 bytes
+.byte 0
+.endr
 
-  .ascii "mt@gmail.com\0"
-  .rept 29
-  .byte 0
-  .endr
+.long 29
 
-  .quad 29
+.ascii "fd@gmail.com\0"
+.rept 28 # Padding to 40 bytes
+.byte 0
+.endr
 
 record3:
-  .ascii "Derrick\0"
-  .rept 32 #padding to 40 bytes
-  .byte 0
-  .endr
+.ascii "Derrick\0"
+.rept 32 # Padding to 40 bytes
+.byte 0
+.endr
 
-  .ascii "McIntire\0"
-  .rept 31 #padding to 40 bytes
-  .byte 0
-  .endr
+.ascii "McIntire\0"
+.rept 31 # Padding to 40 bytes
+.byte 0
+.endr
 
-  .ascii "500 W Oakland\nSan Diego, CA 54321\0"
-  .rept 206 #padding to 240 bytes
-  .byte 0
-  .endr
+.ascii "500 W Oakland\nSan Diego, CA 54321\0"
+.rept 206 # Padding to 240 bytes
+.byte 0
+.endr
 
-  .ascii "mt@gmail.com\0"
-  .rept 29
-  .byte 0
-  .endr
+.long 36
 
+.ascii "fd@gmail.com\0"
+.rept 28 # Padding to 40 bytes
+.byte 0
+.endr
 
-  .quad 36
 file_name:
   .ascii "test.dat\0"
   .equ ST_FD, -WORD_SIZE
