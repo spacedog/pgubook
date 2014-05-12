@@ -14,7 +14,7 @@
 .type count_chars, @function
 .globl count_chars
 
-.equ ST_STRING_START_ADDR, 2*WORD_SIZE
+.equ ST_STRING_START_ADDR, 2*WORD_SIZE # ARG1
 
 count_chars:
   push %rbp
