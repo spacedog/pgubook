@@ -25,7 +25,7 @@ _start:
   movq $SYS_OPEN, %rax
   movq $input_file_name, %rdi
   movq $0, %rsi
-  movq $0x666, %rdx
+  movq $0666, %rdx
   syscall
 
   movq %rax, ST_FD_INPUT(%rbp)
@@ -34,7 +34,7 @@ _start:
   movq $SYS_OPEN, %rax
   movq $output_file_name, %rdi
   movq $0101, %rsi
-  movq $0x666, %rdx
+  movq $0666, %rdx
   syscall
 
   movq %rax, ST_FD_OUTPUT(%rbp)
